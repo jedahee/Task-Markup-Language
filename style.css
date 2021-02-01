@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 header {
@@ -15,11 +18,14 @@ header {
 #img_menu {
     padding: 5px;
     border-radius: 7px;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
     height: 32px;
+    z-index: 0;
 }
 
 #boton_menu {
+    position: absolute;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,14 +45,59 @@ header {
     transition: transform 0.3s ease-in-out;
 }
 
-#boton_menu:hover #img_menu {
-    opacity: 0;
-}
-
-#boton_menu:hover::after {
+.hacerAnimacion::after {
     transform: rotate(45deg);
 }
 
-#boton_menu:hover::before {
+.hacerAnimacion::before {
     transform: rotate(-45deg);
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 70px;
+    width: 100%;
+    background-color: #484848;
+    text-decoration: none;
+    text-emphasis: none;
+    color: white;
+    border-bottom: 1px solid white;
+    z-index: 0;
+}
+
+
+.item_menu::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 70px;
+    width: 100%;
+    background-color: #E04545;
+    transform: translateY(500px);
+    z-index: -1;
+    transition: transform 0.4s ease-in-out;
+
+}
+
+.item_menu:hover::before {
+    transform: translateY(0%);
 }
