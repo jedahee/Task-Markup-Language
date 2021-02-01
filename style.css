@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    height: 60%;
+    background: url(img/fondo_header.jpeg);
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img_menu {
+    padding: 5px;
+    border-radius: 7px;
+    transition: opacity 0.3s ease-in-out;
+    height: 32px;
+}
+
+#boton_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+#boton_menu::before, #boton_menu::after {
+    content: "";
+    display: block;
+    height: 2.8px;
+    width: 32px;
+    background-color: white;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+#boton_menu:hover #img_menu {
+    opacity: 0;
+}
+
+#boton_menu:hover::after {
+    transform: rotate(45deg);
+}
+
+#boton_menu:hover::before {
+    transform: rotate(-45deg);
+}
