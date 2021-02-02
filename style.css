@@ -118,7 +118,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	
 	border: 1px solid black;
 	margin: 20px;
 	height: 400px;
@@ -133,6 +132,18 @@ main {
 
 #item1 .img_fondo_item{
 	background-image: url("img/html5.jpg");
+}
+
+#item2 .img_fondo_item{
+	background-image: url("img/python.jpeg");
+}
+
+#item3 .img_fondo_item{
+	background-image: url("img/html_css_js.png");
+}
+
+#item4 .img_fondo_item{
+	background-image: url("img/php_mysql.jpg");
 }
 
 .parrafo_item, .btn_item {
@@ -152,7 +163,7 @@ main {
 	background-color: white;
 	cursor: pointer;
 	height: 40px;
-	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
 .btn_item:hover {
