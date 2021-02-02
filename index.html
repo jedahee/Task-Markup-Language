@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio sobre mis proyectos, cursos e información">
+    <meta name="description" content="Portfolio sobre mis proyectos, cursos e información varia">
+    <!--Enlace al archivo CSS-->
     <link rel="stylesheet" href="style.css">
     <title>Trabajo lenguaje de marcas</title>
 </head>
 <body>
+    
+    <!--Cabecera de la página web, esta contiene un botón con el que se accede al menú, y el propio menú-->
     <header>
         <button id="boton_menu"><img id="img_menu" src="img/boton_menu.svg" alt="Imagen menu hamburguesa"></button>
         <nav id="nav">
@@ -17,7 +20,10 @@
             <a href="#" class="item_menu">Contacto</a>
         </nav>
     </header>
+    
+    <!--Cuerpo de la página donde se almacena cada artículo-->
     <main id="container_main">
+        <!--Cada artículo se compone de un div que lo utilizo como imagen del artículo, un párrafo y un botón de 'Ver más'-->
         <article class="item_container" id="item1">
 			<div class="img_fondo_item"></div>
 			<p class="parrafo_item">Lorem Ipsum is simply has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of</p>
@@ -32,21 +38,28 @@
 		
 		<article class="item_container" id="item3">
 			<div class="img_fondo_item"></div>
-			<p class="parrafo_item">Lorem Ipsum is simply has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of</p>
+			<p class="parrafo_item">Lorem Ipsum is simply has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting</p>
 			<button class="btn_item">Ver más</button>
 		</article>
 		
 		<article class="item_container" id="item4">
 			<div class="img_fondo_item"></div>
-			<p class="parrafo_item">Lorem Ipsum is simply has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of</p>
+			<p class="parrafo_item">Lorem Ipsum is simply has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
 			<button class="btn_item">Ver más</button>
 		</article>
     </main>
-
-    <footer>
-		<>
+    
+    <!--Linea que separa el main del footer-->
+    <hr id="linea">
+    
+    <!--Pie de página con los enlaces a instagram, github y stackoverflow-->
+    <footer id="pie">
+		<img class="footer_item_img" src="img/stack-overflow.svg" alt="logo_stackoverflow">
+        <img class="footer_item_img" src="img/instagram.svg" alt="logo_instagram">
+        <img class="footer_item_img" src="img/github.svg" alt="logo_github">
     </footer>
 
+    <!--Enlace al JS-->
     <script src="app.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ html, body {
 header {
     padding: 15px;
     height: 70%;
-    background: url(img/fondo_header.jpeg);
+    background: url("img/fondo_header.jpeg");
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -39,6 +39,7 @@ header {
     background-color: transparent;
 }
 
+/*Pseudoelementos para hacer el efecto del botón del header*/
 #boton_menu::before, #boton_menu::after {
     content: "";
     display: block;
@@ -88,7 +89,7 @@ header {
     z-index: 0;
 }
 
-
+/*Pseudoelementos para hacer el efecto del menú de colorearse de rojo*/
 .item_menu::before {
     content: " ";
     position: absolute;
@@ -118,16 +119,25 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid black;
+	border: 1px solid #7c7a7a;
 	margin: 20px;
-	height: 400px;
+    height: max-content;
+    overflow: hidden;
 }
 
 .img_fondo_item {
 	width: 100%;
 	height: 55%;
 	background-size: cover;
-	background-position: center;
+    background-position: center;
+    transition: width 0.3s ease, filter 0.3s ease;
+    min-height: 200px;
+}
+
+.item_container:hover .img_fondo_item {
+    width: 107%;
+    -webkit-filter: brightness(120%);
+    filter: brightness(120%);    ;
 }
 
 #item1 .img_fondo_item{
@@ -166,7 +176,55 @@ main {
 	transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
+/*Cuando el ratón este encima de este elemento*/
 .btn_item:hover {
 	color: white;
 	background-color: #E04545;
+}
+
+hr {
+    width: 80%;
+    border: 1px solid#E04545;
+}
+
+/*FOOTER*/
+
+#pie {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+    min-height: 85px;
+    margin-top: 30px;
+    background-color: #7c7a7a;
+}
+
+.footer_item_img {
+    width: 52px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Cuando el ratón este encima de este elemento*/
+.footer_item_img:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/*Media querys*/
+
+@media screen and (max-width: 845px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .btn_item {
+        width: 90%;
+    }
+
+    .footer_item_img {
+        width: 43px;
+    }
 }
