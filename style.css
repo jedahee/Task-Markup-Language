@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+/*TODO EL DOCUMENTO*/
+
 html, body {
     height: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
 
+/*HEADER*/
+
 header {
-    padding: 20px;
-    height: 60%;
+    padding: 15px;
+    height: 70%;
     background: url(img/fondo_header.jpeg);
     background-position: top;
     background-size: cover;
@@ -74,7 +78,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 2em;
-    height: 70px;
+    height: 75px;
     width: 100%;
     background-color: #484848;
     text-decoration: none;
@@ -89,15 +93,69 @@ header {
     content: " ";
     position: absolute;
     display: block;
-    height: 70px;
+    height: 75px;
     width: 100%;
     background-color: #E04545;
     transform: translateY(500px);
     z-index: -1;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease;
 
 }
 
 .item_menu:hover::before {
     transform: translateY(0%);
+}
+
+
+/*MAIN*/
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 30px;
+}
+.item_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	border: 1px solid black;
+	margin: 20px;
+	height: 400px;
+}
+
+.img_fondo_item {
+	width: 100%;
+	height: 55%;
+	background-size: cover;
+	background-position: center;
+}
+
+#item1 .img_fondo_item{
+	background-image: url("img/html5.jpg");
+}
+
+.parrafo_item, .btn_item {
+	margin: 10px 20px;
+	text-align: justify;
+}
+
+.btn_item {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	outline: none;
+	border: 1px #E04545 solid;
+	width: 95%;
+	text-align: center;
+	color: #E04545;
+	background-color: white;
+	cursor: pointer;
+	height: 40px;
+	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.btn_item:hover {
+	color: white;
+	background-color: #E04545;
 }
