@@ -1,0 +1,98 @@
+/*HEADER*/
+
+header {
+    padding: 15px;
+    height: 70%;
+    background: url("img/fondo_header.jpeg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img_menu {
+    padding: 5px;
+    border-radius: 7px;
+    transition: opacity 0.35s ease-in-out;
+    height: 32px;
+    z-index: 0;
+}
+
+#boton_menu {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid white;
+    background-color: transparent;
+}
+
+/*Pseudoelementos para hacer el efecto del botón del header*/
+#boton_menu::before, #boton_menu::after {
+    content: "";
+    display: block;
+    height: 2.8px;
+    width: 32px;
+    background-color: white;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hacerAnimacion::after {
+    transform: rotate(45deg);
+}
+
+.hacerAnimacion::before {
+    transform: rotate(-45deg);
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    z-index: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 75px;
+    width: 100%;
+    background-color: #484848;
+    text-decoration: none;
+    text-emphasis: none;
+    color: white;
+    border-bottom: 1px solid white;
+    z-index: 0;
+}
+
+/*Pseudoelementos para hacer el efecto del menú de colorearse de rojo*/
+.item_menu::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 75px;
+    width: 100%;
+    background-color: #E04545;
+    transform: translateY(500px);
+    z-index: -1;
+    transition: transform 0.4s ease;
+
+}
+
+.item_menu:hover::before {
+    transform: translateY(0%);
+}
