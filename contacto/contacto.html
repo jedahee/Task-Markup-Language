@@ -25,9 +25,43 @@
     
     <!--Cuerpo de la página donde se almacena cada artículo-->
     <main id="container_main">
-        
-    </main>
+        <section id="main_form">
+            <h1 id="main_titulo">Enviame tu correo aquí</h1>
+
+            <form action="" method="POST" id="form">
+
+                <input type="text" id="emisor_form" placeholder="De: jesus@gmail.com">
+                <input type="text" id="asunto_form" placeholder="Asunto: Resolver duda">
+                
+                <textarea id="textarea_form" cols="30" rows="10" placeholder="Escribe aquí el contenido de tu correo..."></textarea>
+                
+                <input type="submit" id="enviar_form">
+            </form>
+        </section>
+
+            
+        <!--Barra lateral para visualizar los proyectos-->
+        <aside id="aside">
+
+            <h2 id="aside_titulo">Ver algunos proyectos</h2>
+
+            <!--Parte 1 del aside - HTML5-->
+            <section class="aside_section" id="aside_html5">
+                <p class="aside_section_titulo">HTML5</p>
+                <img src="" alt="imagen_html5" id="imagen_html5">
+                <a class="aside_section_link" href="#">Mirar</a>
+            </section>
+
+            <!--Parte 2 del aside - PYTHON-->
+            <section class="aside_section" id="aside_python">
+                <p class="aside_section_titulo">PYTHON</p>
+                <img src="" alt="imagen_python" id="imagen_python">
+                <a class="aside_section_link" href="#">Mirar</a>
+            </section>
+        </aside>
     
+    </main>
+
     <!--Linea que separa el main del footer-->
     <hr id="linea">
     
@@ -35,7 +69,7 @@
     <footer id="pie">
 		<!--Menú de navegación del footer-->
 		<nav id="footer_nav">
-			<a href="#" class="item_footer_nav">Inicio</a>
+			<a href="../index.html" class="item_footer_nav">Inicio</a>
             <a href="#" class="item_footer_nav">Proyectos</a>
             <a href="#" class="item_footer_nav">Cursos</a>
             <a href="#" class="item_footer_nav">Contacto</a>

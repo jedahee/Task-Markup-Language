@@ -1,4 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 html, body {
     height: 100%;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#container_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#main_form {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+
+form input {
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#main_titulo {
+    font-size: 2em;
+}
+
+
+
+#textarea_form, .container_input {
+    margin: 5px 0;
+}
+
+#texto_emisor, #texto_asunto {
+    display: block;
+    padding: 5px;
+    width: 70px;
+    position: absolute;
+    height: 20px;
+}
+
+#emisor_form, #asunto_form {
+    display: flex;
+    width: 100%;
+    border: 1px solid #7c7a7a;
+    height: 20px;
+    padding: 5px;
+    margin: 10px;
+    transition: border 0.3s ease;
+    font-size: 1.1em;
+}
+
+
+#textarea_form {
+    width: 100%;
+    outline: none;
+    border: 1px solid #7c7a7a;
+    resize: none;
+    padding: 5px;
+    margin-bottom: 20px;
+    font-family: 'Raleway', sans-serif;
+    transition: border 0.3s ease;
+    font-size: 1.1em;
+}
+
+#textarea_form:hover, #emisor_form:hover, #asunto_form:hover {
+    border: 1px solid #E04545;
+}
+
+#enviar_form {
+    width: 102%;
+    padding: 8px;
+    color: #E04545;
+    background-color: #FFF;
+    border: 1px solid #E04545;
+    cursor: pointer;
+	transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    font-size: 1.2em;
+}
+
+#enviar_form:hover {
+    color: #FFF;
+    background-color: #E04545;
+}
+
+#aside {
+
 }

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
 /*HEADER*/
 
 header {
@@ -7,6 +9,8 @@ header {
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
+    font-family: 'Raleway', sans-serif;
+    
 }
 
 #img_menu {
@@ -38,6 +42,7 @@ header {
     background-color: white;
     position: absolute;
     transition: transform 0.3s ease-in-out;
+    border-radius: 20px;
 }
 
 .hacerAnimacion::after {

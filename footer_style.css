@@ -1,4 +1,8 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+/*FOOTER*/
+
 hr {
     width: 80%;
     border: 1px solid #E04545;
@@ -12,6 +16,7 @@ hr {
     align-items: center;
     height: 12%;
     margin-top: 30px;
+	font-family: 'Raleway', sans-serif;
 }
 
 #footer_nav {
