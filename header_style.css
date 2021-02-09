@@ -29,7 +29,7 @@ header {
     align-items: center;
     cursor: pointer;
     outline: none;
-    border: 3px solid white;
+    border: 3px solid #FFFFFF;
     background-color: transparent;
 }
 
@@ -92,12 +92,12 @@ header {
     height: 75px;
     width: 100%;
     background-color: #E04545;
-    transform: translateY(500px);
+    transform: translateY(400%);
     z-index: -1;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease-in-out;
 
 }
 
-.item_menu:hover::before {
+.item_menu:hover::before, .item_menu:focus::before {
     transform: translateY(0%);
 }

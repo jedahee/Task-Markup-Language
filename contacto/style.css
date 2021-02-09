@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+/*TODO EL DOCUMENTO*/
+
 html, body {
     height: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+
+/*PARA EL MAIN DONDE ESTA EL FORMULARIO Y EL ASIDE*/
 
 #container_main {
     display: grid;
@@ -14,16 +18,18 @@ html, body {
     width: 100%;
 }
 
+/*PARA EL CONTENEDOR DEL FORMULARIO*/
+
 #main_form {
     display: flex;
     justify-self: center;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 80%;
 }
 
-
+/*CAMPOS DE TEXTO DEL FORMULARIO*/
 form input {
     outline: none;
     font-family: 'Raleway', sans-serif;
@@ -38,10 +44,8 @@ form input {
 }
 
 #main_titulo {
-    font-size: 2em;
+    font-size: 3em;
 }
-
-
 
 #textarea_form, .container_input {
     margin: 5px 0;
@@ -79,7 +83,7 @@ form input {
     font-size: 1.1em;
 }
 
-#textarea_form:hover, #emisor_form:hover, #asunto_form:hover {
+#textarea_form:focus, #emisor_form:focus, #asunto_form:focus {
     border: 1px solid #E04545;
 }
 
@@ -94,11 +98,94 @@ form input {
     font-size: 1.2em;
 }
 
-#enviar_form:hover {
+#enviar_form:hover, #enviar_form:focus {
     color: #FFF;
     background-color: #E04545;
 }
 
 #aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+.aside_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #7c7a7a;
+    padding: 10px;
+}
+
+.aside_section_titulo {
+    font-weight: bold;
+}
+
+#aside_python {
+    margin-top: 10px;
+}
+
+#imagen_python, #imagen_bt4 {
+    width: 400px;
+    height: 220px;
+}
+
+.aside_section_link {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-emphasis: none;
+    color: #E04545;
+    border: 1px solid #E04545;
+    padding: 5px;
+    width: 390px;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.aside_section_link:hover, .aside_section_link:focus {
+    color: #FFF;
+    background-color: #E04545;
+}
+
+/*Media querys*/
+
+@media screen and (max-width: 900px) {
+    /*Para el texto 'Enviame tu correo aquí'*/
+    #main_titulo {
+        text-align: center;
+    }
+
+    #container_main {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #main_form {
+        width: 90%;
+    }
+
+    #imagen_python, #imagen_bt4 {
+        width: 300px;
+    }
+
+    .aside_section_link {
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    #imagen_python, #imagen_bt4 {
+        width: 250px;
+        height: 150px;
+    }
+
+    .aside_section_link {
+        width: 240px;
+    }
 }

@@ -33,7 +33,7 @@ main {
     transition: width 0.3s ease, filter 0.3s ease;
 }
 
-.item_container:hover .img_fondo_item {
+.item_container:hover .img_fondo_item, .item_container:focus .img_fondo_item {
     width: 107%;
     -webkit-filter: brightness(120%);
     filter: brightness(120%);    ;
@@ -87,7 +87,7 @@ main {
 }
 
 /*Cuando el ratón este encima de este elemento*/
-.btn_item:hover {
+.btn_item:hover, .btn_item:focus {
 	color: white;
 	background-color: #E04545;
 }

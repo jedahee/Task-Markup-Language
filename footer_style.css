@@ -36,7 +36,7 @@ hr {
 	margin: 5px;
 }
 
-.item_footer_nav:hover {
+.item_footer_nav:hover, .item_footer_nav:focus {
 	color: #E04545;
 }
 
@@ -64,6 +64,6 @@ hr {
 }
 
 /*Cuando el ratón este encima de este elemento*/
-.footer_item_link:hover {
+.footer_item_link:hover, .footer_item_link:focus {
     transform: translateY(-10px);
 }
