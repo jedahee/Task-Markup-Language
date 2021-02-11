@@ -43,6 +43,7 @@ form input {
     width: 100%;
 }
 
+/*TAMAÑO 3EM PARA EL TITULO DEL DEL MAIN (H1)*/
 #main_titulo {
     font-size: 3em;
 }
@@ -51,6 +52,7 @@ form input {
     margin: 5px 0;
 }
 
+/*PARA LOS TEXTOS DE LOS CUADROS DE TEXTO INPUT (LOS DOS QUE HAY QUE NO ES EL TEXTAREA)*/
 #texto_emisor, #texto_asunto {
     display: block;
     padding: 5px;
@@ -59,6 +61,7 @@ form input {
     height: 20px;
 }
 
+/*PARA LO MISMO TEXTO_EMISOR PERO EN VEZ DEL TEXTO PARA LOS CUADROS DE TEXTOS EN SÍ*/
 #emisor_form, #asunto_form {
     display: flex;
     width: 100%;
@@ -83,6 +86,7 @@ form input {
     font-size: 1.1em;
 }
 
+/*SELECTORES*/
 #textarea_form:focus, #emisor_form:focus, #asunto_form:focus {
     border: 1px solid #E04545;
 }
@@ -99,55 +103,6 @@ form input {
 }
 
 #enviar_form:hover, #enviar_form:focus {
-    color: #FFF;
-    background-color: #E04545;
-}
-
-#aside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.aside_section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #7c7a7a;
-    padding: 10px;
-}
-
-.aside_section_titulo {
-    font-weight: bold;
-}
-
-#aside_python {
-    margin-top: 10px;
-}
-
-#imagen_python, #imagen_bt4 {
-    width: 400px;
-    height: 220px;
-}
-
-.aside_section_link {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    text-emphasis: none;
-    color: #E04545;
-    border: 1px solid #E04545;
-    padding: 5px;
-    width: 390px;
-    transition: color 0.3s ease-in, background-color 0.3s ease-in;
-}
-
-.aside_section_link:hover, .aside_section_link:focus {
     color: #FFF;
     background-color: #E04545;
 }

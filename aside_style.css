@@ -1,0 +1,52 @@
+/*ASIDE*/
+
+#aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.aside_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #7c7a7a;
+    padding: 10px;
+}
+
+.aside_section_titulo {
+    font-weight: bold;
+}
+
+/*PARA LA IMAGEN*/
+#aside_pt2 {
+    margin-top: 10px;
+}
+
+#imagen_pt2, #imagen_pt1 {
+    width: 400px;
+    height: 220px;
+}
+
+/*PARA EL ENLACE QUE HACE DE BOTÓN*/
+.aside_section_link {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-emphasis: none;
+    color: #E04545;
+    border: 1px solid #E04545;
+    padding: 5px;
+    width: 390px;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
+}
+
+.aside_section_link:hover, .aside_section_link:focus {
+    color: #FFF;
+    background-color: #E04545;
+}
