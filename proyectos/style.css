@@ -1,9 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
 /*TODO EL DOCUMENTO*/
-
+/*GRIS - #7c7a7a  ROJO - #E04545*/
 html, body {
     height: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+}
+
+/*MAIN*/
+
+main {
+    display: grid;
+    grid-template-areas: "listas main aside"
+                         "listas main aside"
+                         "listas main aside";
+    grid-auto-rows: 1fr;
+    grid-gap: 10px;
+}
+
+#listas_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    grid-area: listas;
+    margin: 20px;
+}
+
+.link_nav_main {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #E04545;
+    margin: 5px;
+    color: #E04545;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.link_nav_main::before {
+    content: " ";
+    display: inline-block;
+    height: 50px;
+    width: 15px;
+    background-color: #E04545;
+    position: absolute;
+    z-index: -1;
+    transform: translateX(-20px);
+    transition: transform 0.3s ease-in-out,  width 0.3s ease-in-out;
+}
+
+.sub {
+    margin-left: 30px;
+}
+
+.link_nav_main:hover {
+    color: #FFF;
+}
+
+.link_nav_main:hover::before{
+    transform: translateX(-10px);
+     width: 100%;
+}
+
+#container_main {
+    grid-area: main;
+}
+
+#aside {
+    grid-area: aside;
 }
