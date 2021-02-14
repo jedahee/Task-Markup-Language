@@ -36,7 +36,7 @@ main {
 .item_container:hover .img_fondo_item, .item_container:focus .img_fondo_item {
     width: 107%;
     -webkit-filter: brightness(120%);
-    filter: brightness(120%);    ;
+    filter: brightness(120%);
 }
 
 #item1 .img_fondo_item{
