@@ -50,3 +50,21 @@
     color: #FFF;
     background-color: #E04545;
 }
+
+@media screen and (max-width: 450px) {
+    #aside {
+        display: flex;
+        justify-self: center;
+        width: 50%;
+        margin: 10px 50px;
+    }
+
+    #imagen_pt2, #imagen_pt1 {
+        width: 195px;
+        height: 130px;
+    }
+
+    .aside_section_link {
+        width: 185px;
+    }
+}

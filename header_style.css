@@ -10,7 +10,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
     font-family: 'Raleway', sans-serif;
-    
+    box-sizing: border-box;
 }
 
 #img_menu {
@@ -19,6 +19,7 @@ header {
     transition: opacity 0.35s ease-in-out;
     height: 32px;
     z-index: 0;
+    
 }
 
 #boton_menu {

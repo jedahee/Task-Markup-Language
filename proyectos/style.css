@@ -2,10 +2,12 @@
 
 /*TODO EL DOCUMENTO*/
 /*GRIS - #7c7a7a  ROJO - #E04545*/
+
 html, body {
     height: 100%;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 /*MAIN*/
@@ -13,8 +15,9 @@ html, body {
 main {
     display: grid;
     grid-template-areas:"listas main aside";
-    grid-auto-rows: 1fr;
-    grid-gap: 10px;
+    grid-auto-rows: minmax(none, 1fr);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #listas_nav {
@@ -100,6 +103,7 @@ main {
 h1 {
     text-align: center;
     font-size: 2em;
+    box-sizing: border-box;
 }
 
 #keylogger {
@@ -123,15 +127,15 @@ h1 {
 }
 
 #practicaCSSyBT4 {
-    background-image: url("img/keylogger.jpg");
+    background-image: url("img/bootstrap4Ycss.jpg");
 }
 
 #fe-checklist {
-    background-image: url("img/keylogger.jpg");
+    background-image: url("img/front-endChecklist.jpeg");
 }
 
 #nba-go {
-    background-image: url("img/keylogger.jpg");
+    background-image: url("img/nbaGo.png");
 }
 
 .img_item_article {
@@ -144,6 +148,8 @@ h1 {
 
 .subtitulo_item_article {
     font-size: 1.3em;
+    text-align: center;
+    margin: 10px 30px;
 }
 
 .desc_item_article {
@@ -155,4 +161,39 @@ h1 {
     grid-area: aside;
     height: 800px;
     margin-right: 20px;
+}
+
+@media screen and (max-width: 1368px) {
+    main {
+        grid-template-areas:"listas main main"
+                            "listas aside aside";
+    }
+
+    h1 {
+        font-size: 1.3em;
+    }
+
+    #aside {
+        height: max-content;
+        grid-area: aside;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    main {
+        grid-template-areas:"main"
+                            "aside";
+        grid-template-columns: 1fr;
+    }
+
+    #listas_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .item_article {
+        width: 85%;
+    }
+
 }
