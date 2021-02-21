@@ -72,6 +72,9 @@ main {
 	
 
 .btn_item {
+	display: flex;
+	justify-items: center;
+	align-items: center;
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -84,6 +87,11 @@ main {
 	cursor: pointer;
 	height: 40px;
 	transition: color 0.3s ease-in, background-color 0.3s ease-in;
+	text-decoration: none;
+}
+
+.btn_item span {
+	width: 100%;
 }
 
 /*Cuando el ratón este encima de este elemento*/
