@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../header_style.css">
+        <link rel="stylesheet" href="../footer_style.css">
+        <link rel="stylesheet" href="../aside_style.css">
+        <title>Trabajo Lenguaje de Marcas</title>
+    </head>
+    <body>
+        <!--Cabecera de la página web, esta contiene un botón con el que se accede al menú, y el propio menú-->
+        <header>
+        <button id="boton_menu"><img id="img_menu" src="../img/boton_menu.svg" alt="Imagen menu hamburguesa"></button>
+            <nav id="nav">
+                <a href="../index.html" class="item_menu">Inicio</a>
+                <a href="../proyectos/proyecto.html" class="item_menu">Proyectos</a>
+                <a href="../cursos/cursos.html" class="item_menu">Cursos</a>
+                <a href="#" class="item_menu">Contacto</a>
+            </nav>
+        </header>
+
+        <main id="container_main">
+            <nav id="nav_main">
+                <a href="#frontEnd">Front-end</a>
+                <a href="#backEnd">Back-end</a>
+                <a href="#frameworks">Frameworks</a>
+            </nav>
+            
+            <hr>
+            
+            <article id="container_items_main">
+                <!-- PARTE FRONTEND -->
+                <h1 id="frontEnd">Front-end</h1>
+                
+                <div class="container_item_article">
+                    <iframe src="https://www.youtube.com/embed/kN1XP-Bef7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <section class="item">
+                        <hr>
+                        <img src="img/flechaDespegar.svg" alt="flechaDesplegar">
+                        <h2>Curso HTML</h2>
+                        <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                    </section>
+                </div>
+                
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+                
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+                
+                <!-- PARTE BACKEND -->
+                <h1 id="backEnd">Back-end</h1>
+
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+                
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+                
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+
+                <!-- PARTE FRAMEWORKS -->
+                <h1 id="Frameworks">Frameworks</h1>
+
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+                
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+                
+                <div class="container_item_article">
+                    <section class="item">
+
+                    </section>
+                    <video src="" class="item_video"></video>
+                </div>
+            </article>
+        </main>
+
+
+        <!--Linea que separa el main del footer-->
+        <hr id="linea" />
+
+        <!--Pie de página con dos partes, una de navegación de la web y otra para link a redes sociales-->
+        <footer id="pie">
+            <!--Menú de navegación del footer-->
+            <nav id="footer_nav">
+                <a href="../index.html" class="item_footer_nav">Inicio</a>
+                <a href="../proyectos/proyecto.html" class="item_footer_nav"
+                    >Proyectos</a
+                >
+                <a href="../cursos/cursos.html" class="item_footer_nav"
+                    >Cursos</a
+                >
+                <a href="#" class="item_footer_nav">Contacto</a>
+            </nav>
+
+            <!--Enlaces a redes sociales-->
+            <section id="footer_social">
+                <a href="#" class="footer_item_link"
+                    ><img
+                        class="footer_item_img"
+                        src="../img/stack-overflow.svg"
+                        alt="logo_stackoverflow"
+                /></a>
+                <a href="#" class="footer_item_link"
+                    ><img
+                        class="footer_item_img"
+                        src="../img/instagram.svg"
+                        alt="logo_instagram"
+                /></a>
+                <a href="#" class="footer_item_link"
+                    ><img
+                        class="footer_item_img"
+                        src="../img/github.svg"
+                        alt="logo_github"
+                /></a>
+            </section>
+        </footer>
+
+        <!--Enlace al JS-->
+        <script src="../app.js"></script>
+    </body>
+</html>
