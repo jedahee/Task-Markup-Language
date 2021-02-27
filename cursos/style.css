@@ -49,16 +49,163 @@ html, body {
 }
 
 #container_items_main h1 {
-    font-size: 3rem;
+    font-size: 6rem;
 }
 
 .container_item_article {
     display: flex;
+    width: 90%;
     border: 1px solid #7c7c7c;
     height: 450px;
     overflow: hidden;
+    margin: 3em 0;
+}
+
+.container_item_article:hover > .item_video{
+    width: 100%;
+}
+
+.container_item_article:hover > .item {
+    display: none;
+}
+
+.item_video {
+    height: 100%;
 }
 
 .item {
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.separacion {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 10%;
+    height: 100%;
+}
+
+.item hr {
+    width: 1px;
+    height: 60%;
+    margin: 1em;
+}
+
+.item img {
+    width: 28px;
+    cursor: pointer;
+}
+.texto { 
+    height: 100%;
+    width: 70%;
+    margin: 2em;
+    padding: 10px;
+}
+
+.texto::-webkit-scrollbar {
+    width: 1em;
+}
+
+.texto h2 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.texto span {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container_item_article {
+        width: 100%;
+    }
+
+    .texto h2 {
+        font-size: 3.5rem;
+    }
+
+    .texto span {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .item img {
+        width: 16px;
+    }
+
+    .texto h2 {
+        font-size: 3rem;
+    }
+
+    .texto span {
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    #container_items_main h1 {
+        font-size: 5rem;
+    }
+    
+    .item_video {
+        width: 30%;
+    }
+
+    .texto h2 {
+        font-size: 2.5rem;
+    }
+
+    .texto span {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .container_item_article {
+        height: 350px;
+    }
+
+    .texto {
+        overflow-y: auto;
+    }
+
+    .item img {
+        margin-left: 15px;
+    }
+
+    .item hr {
+        display: none;
+    }
+
+    #nav_main a {
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 455px) {
+    #container_items_main h1 {
+        font-size: 3.5rem;
+    }
+
+    #nav_main {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #nav_main a {
+        width: 100%;
+    }
+
+    .container_item_article {
+        height: 300px;
+    }
+
+    .item_video {
+        width: 0%;
+    }
 }
