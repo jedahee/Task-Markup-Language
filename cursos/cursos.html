@@ -7,8 +7,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="../header_style.css">
         <link rel="stylesheet" href="../footer_style.css">
-        <link rel="stylesheet" href="../aside_style.css">
-        <title>Trabajo Lenguaje de Marcas</title>
+        <title>Jesús Daza Hernández</title>
     </head>
     <body>
         <!--Cabecera de la página web, esta contiene un botón con el que se accede al menú, y el propio menú-->
@@ -17,12 +16,14 @@
             <nav id="nav">
                 <a href="../index.html" class="item_menu">Inicio</a>
                 <a href="../proyectos/proyecto.html" class="item_menu">Proyectos</a>
-                <a href="../cursos/cursos.html" class="item_menu">Cursos</a>
-                <a href="#" class="item_menu">Contacto</a>
+                <a href="cursos.html" class="item_menu">Cursos</a>
+                <a href="../contacto/contacto.html" class="item_menu">Contacto</a>
             </nav>
         </header>
 
+        <!--Contenedor donde se almacena la navegación y los cursos-->
         <main id="container_main">
+            <!--El menú de navegación por la propia página-->
             <nav id="nav_main">
                 <a href="#frontEnd">Front-end</a>
                 <a href="#backEnd">Back-end</a>
@@ -31,20 +32,27 @@
             
             <hr>
             
+            <!--Cada article es un video con su texto de resumen-->
             <article id="container_items_main">
                 <!-- PARTE FRONTEND -->
                 <h1 id="frontEnd">Front-end</h1>
                 
                 <div class="container_item_article">
+                    <!--Video de youtube insertado-->
                     <iframe class="item_video" src="https://www.youtube.com/embed/kN1XP-Bef7w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <!--Contenedor padre de dos contenedor que contienen la separación entre el video y el texto-->
                     <section class="item">
+                        <!--El contenedor que contiene la flecha y el hr que hace de separación entre el video y el texto-->
                         <section class="separacion">
                             <hr>
                             <img src="img/flechaDespegar.svg" alt="flechaDesplegar">
                         </section>
+
+                        <!--El contenedor con el texto que hace resumen a lo que es el video del curso correspondiente-->
                         <section class="texto">
                             <h2>Curso HTML</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <span>Aprende en este curso completo HTML de forma completa y gratuita para poder a empezar a estructurar de una forma profesional tu sitio web con todo tipo de estructuras.</span>
                         </section>
                     </section>
                 </div>
@@ -58,7 +66,7 @@
                         </section>
                         <section class="texto">
                             <h2>Curso CSS</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <span>Si ya sabes como estructurar tu web con HTML, ahora se aproxima lo mejor, el diseño de tu web. Con CSS puedes decorar y posicionar elementos de tu web como quieras.</span>
                         </section>
                     </section>
                 </div>
@@ -72,7 +80,7 @@
                         </section>
                         <section class="texto">
                             <h2>Curso JS</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <span>Ya que has aprendido a hacer tu página web estática profesional con HTML y CSS viene siendo hora de que el usuario pueda interactuar con tu web modificando elementos HTML de forma dinámica.</span>
                         </section>
                     </section>
                 </div>
@@ -88,8 +96,8 @@
                             <img src="img/flechaDespegar.svg" alt="flechaDesplegar">
                         </section>
                         <section class="texto">
-                            <h2>Curso PHP</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <h2 id="cursoPHP">Curso PHP</h2>
+                            <span>Si ya has aprendido todo lo necesario para saber montar el front end de tu web de forma profesional ahora puedes aprender PHP para poder manejar información en bases de datos como quieras.</span>
                         </section>
                     </section>
                 </div>
@@ -102,8 +110,8 @@
                             <img src="img/flechaDespegar.svg" alt="flechaDesplegar">
                         </section>
                         <section class="texto">
-                            <h2>Curso MYSQL</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <h2 id="cursoMySQL">Curso MYSQL</h2>
+                            <span>Este será en lenguaje con el que manejarás los datos en la base de datos de tu sitio web utilizando como conector un lenguaje de programación de back end como PHP.</span>
                         </section>
                     </section>
                 </div>
@@ -117,7 +125,7 @@
                         </section>
                         <section class="texto">
                             <h2>Curso MONGODB</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <span>Este es otro tipo de herramiento para manejar los datos de tu web solo que tiene otras características</span>
                         </section>
                     </section>
                 </div>
@@ -133,8 +141,8 @@
                             <img src="img/flechaDespegar.svg" alt="flechaDesplegar">
                         </section>
                         <section class="texto">
-                            <h2>Curso Bootsrap 4</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <h2>Curso BOOTSTRAP 4</h2>
+                            <span>Si ya sabes controlar CSS no te viene nada mal empezar a dominar algún framework CSS y Bootstrap mejor forma para hacer tus diseños de forma sencilla.</span>
                         </section>
                     </section>
                 </div>
@@ -147,8 +155,8 @@
                             <img src="img/flechaDespegar.svg" alt="flechaDesplegar">
                         </section>
                         <section class="texto">
-                            <h2>Curso Angular</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <h2>Curso ANGULAR</h2>
+                            <span>Framework de JS muy potente capaz de hacer diseños y crear funcionalidades de sitios web de forma profesional.</span>
                         </section>
                     </section>
                 </div>
@@ -161,8 +169,8 @@
                             <img src="img/flechaDespegar.svg" alt="flechaDesplegar">
                         </section>
                         <section class="texto">
-                            <h2>Curso Django</h2>
-                            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime corporis ex accusamus quam perferendis. Perferendis nulla porro animi consectetur fuga vero vel! Velit cum ratione accusantium rerum voluptate pariatur asperiores!</span>
+                            <h2>Curso DJANGO</h2>
+                            <span>Si quieres especializarte en la parte back end de sitios web, este framework es perfecto para poder manejar esa información con Python.</span>
                         </section>
                     </section>
                 </div>
@@ -181,27 +189,27 @@
                 <a href="../proyectos/proyecto.html" class="item_footer_nav"
                     >Proyectos</a
                 >
-                <a href="../cursos/cursos.html" class="item_footer_nav"
+                <a href="cursos.html" class="item_footer_nav"
                     >Cursos</a
                 >
-                <a href="#" class="item_footer_nav">Contacto</a>
+                <a href="../contacto/contacto.html" class="item_footer_nav">Contacto</a>
             </nav>
 
             <!--Enlaces a redes sociales-->
             <section id="footer_social">
-                <a href="#" class="footer_item_link"
+                <a target="_blank" href="https://es.stackoverflow.com/users/147496/jesusdaza?tab=profile" class="footer_item_link"
                     ><img
                         class="footer_item_img"
                         src="../img/stack-overflow.svg"
                         alt="logo_stackoverflow"
                 /></a>
-                <a href="#" class="footer_item_link"
+                <a target="_blank" href="https://www.instagram.com/jcode_web/" class="footer_item_link"
                     ><img
                         class="footer_item_img"
                         src="../img/instagram.svg"
                         alt="logo_instagram"
                 /></a>
-                <a href="#" class="footer_item_link"
+                <a target="_blank" href="https://www.github.com/jedahee" class="footer_item_link"
                     ><img
                         class="footer_item_img"
                         src="../img/github.svg"

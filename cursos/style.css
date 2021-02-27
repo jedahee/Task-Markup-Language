@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+/* PARA TODO EL DOCUMENTO */
+
 html, body {
     height: 100%;
     margin: 0;
@@ -8,6 +10,8 @@ html, body {
 
 }
 
+/* PARA EL MAIN QUE CONTIENE LA NAVEGACIÓN Y LOS DISTINTOS CURSOS */
+
 #container_main {
     display: flex;
     flex-direction: column;
@@ -15,6 +19,7 @@ html, body {
     justify-content: space-around;
 }
 
+/*PARA LA NAVEGACIÓN DEL MAIN*/
 #nav_main {
     margin: 1em;
     width: 80%;
@@ -23,16 +28,22 @@ html, body {
     align-items: center;
 }
 
+/*PARA LOS ENLACES DE NAVEGACIÓN*/
+
 #nav_main a {
     display: flex;
     justify-content: center;
     align-items: center;
+
     text-decoration: none;
     text-emphasis: none;
+    
     color: #E04545;
     border: 1px solid #E04545;
+    
     padding: 0.5em;
     width: 20%;
+
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
@@ -41,10 +52,13 @@ html, body {
     color: #FFF;
 }
 
+/* ESTE ES EL CONTENEDOR QUE TIENE DENTRO TODOS LOS ARTICLE CON LOS CURSOS */
+
 #container_items_main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     width: 80%;
 }
 
@@ -52,8 +66,11 @@ html, body {
     font-size: 6rem;
 }
 
+/* PARA CURSO CON SU TEXTO DE INTRODUCCIÓN */
+
 .container_item_article {
     display: flex;
+    
     width: 90%;
     border: 1px solid #7c7c7c;
     height: 450px;
@@ -71,6 +88,7 @@ html, body {
 
 .item_video {
     height: 100%;
+    width: 30%;
 }
 
 .item {
@@ -83,9 +101,12 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    
     width: 10%;
     height: 100%;
 }
+
+/* PARA LA SEPARACIÓN ENTRE EL VIDEO Y EL TEXTO */
 
 .item hr {
     width: 1px;
@@ -97,6 +118,9 @@ html, body {
     width: 28px;
     cursor: pointer;
 }
+
+/* PARA EL TEXTO DE RESUMEN DE CADA VIDEO */
+
 .texto { 
     height: 100%;
     width: 70%;
@@ -116,6 +140,8 @@ html, body {
 .texto span {
     font-size: 1.4rem;
 }
+
+/*Media querys -- Aquí solo cambio medidas de tamaño de fuentes para que sea adaptable a todos los dispositivos*/
 
 @media screen and (max-width: 1200px) {
     .container_item_article {
@@ -146,7 +172,7 @@ html, body {
 }
 
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 840px) {
     #container_items_main h1 {
         font-size: 5rem;
     }
@@ -165,6 +191,14 @@ html, body {
 }
 
 @media screen and (max-width: 550px) {
+    #container_items_main h1 {
+        font-size: 4rem;
+    }
+    
+    .texto h2 {
+        font-size: 2rem;
+    }
+    
     .container_item_article {
         height: 350px;
     }
@@ -185,11 +219,15 @@ html, body {
         width: 30%;
         margin: 10px;
     }
+
+    .item_video {
+        width: 25%;
+    }
 }
 
 @media screen and (max-width: 455px) {
     #container_items_main h1 {
-        font-size: 3.5rem;
+        font-size: 3.2rem;
     }
 
     #nav_main {
@@ -199,6 +237,10 @@ html, body {
 
     #nav_main a {
         width: 100%;
+    }
+
+    .texto h2 {
+        font-size: 1.8rem;
     }
 
     .container_item_article {
